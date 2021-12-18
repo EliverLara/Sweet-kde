@@ -11,3 +11,7 @@ X-KDE-PluginInfo-Category=Plasma Theme
 X-KDE-PluginInfo-License=CC BY-SA 4.0
 X-KDE-PluginInfo-EnabledByDefault=true
 X-Plasma-API=5.0
+
+
+[AdaptiveTransparency]
+enabled=true
