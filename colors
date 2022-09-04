@@ -1,24 +1,24 @@
 [Colors:Button]
 BackgroundNormal=255,255,255
-DecorationFocus=133,0,247
+DecorationFocus=0, 114, 255
 DecorationHover=189,147,249
 ForegroundNormal=217,221,227
 
 [Colors:Complementary]
 BackgroundNormal=32,32,32
-DecorationFocus=133,0,247
+DecorationFocus=0, 114, 255
 DecorationHover=189,147,249
 ForegroundNormal=217,221,227
 
 [Colors:View]
 BackgroundNormal=24,27,40
-DecorationFocus=133,0,247
+DecorationFocus=0, 114, 255
 DecorationHover=189,147,249
 ForegroundNormal=217,221,227
 
 [Colors:Window]
 BackgroundNormal=22,25,37
-DecorationHover=133,0,247
+DecorationHover=0, 114, 255
 ForegroundLink=3,77,179
 ForegroundNormal=217,221,227
 ForegroundVisited=153,93,198
