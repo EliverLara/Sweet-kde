@@ -1,0 +1,29 @@
+resize_algorithm = bilinear
+hotspot_x = 0.67
+hotspot_y = 0.67
+
+define_size = 0, wait-01.svg, 30
+define_size = 0, wait-02.svg, 30
+define_size = 0, wait-03.svg, 30
+define_size = 0, wait-04.svg, 30
+define_size = 0, wait-05.svg, 30
+define_size = 0, wait-06.svg, 30
+define_size = 0, wait-07.svg, 30
+define_size = 0, wait-08.svg, 30
+define_size = 0, wait-09.svg, 30
+define_size = 0, wait-10.svg, 30
+define_size = 0, wait-11.svg, 30
+define_size = 0, wait-12.svg, 30
+define_size = 0, wait-13.svg, 30
+define_size = 0, wait-14.svg, 30
+define_size = 0, wait-15.svg, 30
+define_size = 0, wait-16.svg, 30
+define_size = 0, wait-17.svg, 30
+define_size = 0, wait-18.svg, 30
+define_size = 0, wait-19.svg, 30
+define_size = 0, wait-20.svg, 30
+define_size = 0, wait-21.svg, 30
+define_size = 0, wait-22.svg, 30
+define_size = 0, wait-23.svg, 30
+
+define_override = watch

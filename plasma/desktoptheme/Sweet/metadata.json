@@ -1,0 +1,19 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "eliverlara@gmail.com",
+                "Name": "EliverLara"
+            }
+        ],
+        "Category": "",
+        "Description": "A dark and modern theme for Plasma",
+        "EnabledByDefault": true,
+        "Id": "Sweet",
+        "License": "GPLv3+",
+        "Name": "Sweet",
+        "Version": "1.0.0",
+        "Website": "https://github.com/EliverLara/Sweet"
+    },
+    "X-Plasma-API": "5.0"
+}

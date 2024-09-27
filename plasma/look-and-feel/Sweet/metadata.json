@@ -1,0 +1,18 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "eliverlara@gmail.com",
+                "Name": "Eliver Lara"
+            }
+        ],
+        "Category": "",
+        "Description": "Sweet SDDM theme",
+        "Id": "Sweet",
+        "License": "GPLv3+",
+        "Name": "Sweet",
+        "Website": "https://github.com/EliverLara/Sweet/tree/nova/kde"
+    },
+    "X-Plasma-API": "5.0"
+}

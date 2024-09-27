@@ -1,0 +1,5 @@
+resize_algorithm = bilinear
+hotspot_x = 0.67
+hotspot_y = 1.17
+
+define_size = 0, down-arrow.svg

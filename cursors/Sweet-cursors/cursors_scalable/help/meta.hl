@@ -1,0 +1,11 @@
+resize_algorithm = bilinear
+hotspot_x = 0.17
+hotspot_y = 0.17
+
+define_size = 0, help.svg
+
+define_override = question_arrow
+define_override = d9ce0ab605698f320427677b458ad60b
+define_override = 5c6cd98b3f3ebcb1f9c7f1c204630408
+define_override = whats_this
+define_override = left_ptr_help
