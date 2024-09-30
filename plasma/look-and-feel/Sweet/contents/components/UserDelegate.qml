@@ -18,9 +18,9 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-import QtQuick 2.8
-import org.kde.plasma.core 2.0 as PlasmaCore
-import org.kde.plasma.components 2.0 as PlasmaComponents
+import QtQuick
+import org.kde.kirigami as Kirigami
+import org.kde.plasma.components as PlasmaComponents
 
 Item {
     id: wrapper
@@ -104,13 +104,12 @@ Item {
             anchors.fill: parent
         }
 
-        PlasmaCore.IconItem {
+        Kirigami.Icon {
             id: faceIcon
             source: iconSource
             visible: (face.status == Image.Error || face.status == Image.Null)
             anchors.fill: parent
             anchors.margins: units.gridUnit * 0.5 // because mockup says so...
-            colorGroup: PlasmaCore.ColorScope.colorGroup
         }
     }
 
@@ -133,7 +132,7 @@ Item {
             live: true // otherwise the user in focus will show a blurred avatar
         }
 
-        property var colorBorder: "#00000000"
+        property string colorBorder: "#00000000"
 
         //draw a circle with an antialiased border
         //innerRadius = size of the inner circle with contents
@@ -187,7 +186,7 @@ Item {
         width: constrainText ? parent.width : implicitWidth
         text: wrapper.name
         style: softwareRendering ? Text.Outline : Text.Normal
-        styleColor: softwareRendering ? PlasmaCore.ColorScope.backgroundColor : "transparent" //no outline, doesn't matter
+        styleColor: softwareRendering ? Kirigami.Theme.backgroundColor : "transparent" //no outline, doesn't matter
         elide: Text.ElideRight
         horizontalAlignment: Text.AlignHCenter
         //make an indication that this has active focus, this only happens when reached with keyboard navigation

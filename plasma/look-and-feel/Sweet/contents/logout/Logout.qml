@@ -17,22 +17,23 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-import QtQuick 2.2
-import QtQuick.Layouts 1.2
-import QtQuick.Controls 1.1 as Controls
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls as Controls
 
-import org.kde.plasma.core 2.0 as PlasmaCore
-import org.kde.plasma.components 2.0 as PlasmaComponents
-import org.kde.kcoreaddons 1.0 as KCoreAddons
+import org.kde.plasma.components as PlasmaComponents
+import org.kde.kcoreaddons as KCoreAddons
 
-import "../components"
+import org.kde.breeze.components
+// import "../components"
 import "timer.js" as AutoTriggerTimer
 
-import org.kde.plasma.private.sessions 2.0
+import org.kde.plasma.private.sessions
+import org.kde.plasma.plasma5support as Plasma5Support
 
-PlasmaCore.ColorScope {
+Plasma5Support.ColorScope {
     id: root
-    colorGroup: PlasmaCore.Theme.ComplementaryColorGroup
+    colorGroup: Plasma5Support.Theme.ComplementaryColorGroup
     height: screenGeometry.height
     width: screenGeometry.width
 
