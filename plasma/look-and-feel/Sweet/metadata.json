@@ -14,5 +14,5 @@
         "Name": "Sweet",
         "Website": "https://github.com/EliverLara/Sweet/tree/nova/kde"
     },
-    "X-Plasma-API": "5.0"
+    "X-Plasma-API-Minimum-Version": "6.0"
 }
