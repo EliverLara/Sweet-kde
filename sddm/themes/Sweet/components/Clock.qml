@@ -17,10 +17,10 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
  
-import QtQuick 2.8
-import QtQuick.Layouts 1.1
-import QtQuick.Controls 2.5
-import org.kde.plasma.plasma5support 2.0 as PlasmaCore
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls
+import org.kde.plasma.plasma5support as Plasma5Support
 
 ColumnLayout {
     readonly property bool softwareRendering: GraphicsInfo.api === GraphicsInfo.Software
@@ -44,7 +44,7 @@ ColumnLayout {
         Layout.alignment: Qt.AlignHCenter
         font.family: config.font
     }
-    PlasmaCore.DataSource {
+    Plasma5Support.DataSource {
         id: timeSource
         engine: "time"
         connectedSources: ["Local"]

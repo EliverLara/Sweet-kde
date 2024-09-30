@@ -1,11 +1,10 @@
 import "components"
 
-import QtQuick 2.2
-import QtQuick.Layouts 1.2
-import QtQuick.Controls 2.4
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls
 
-import org.kde.plasma.plasma5support 2.0 as PlasmaCore
-import org.kde.plasma.components 3.0 as PlasmaComponents
+import org.kde.plasma.components as PlasmaComponents
 
 SessionManagementScreen {
     id: root

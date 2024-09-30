@@ -17,16 +17,14 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
  
-import QtQuick 2.15
-
-import QtQuick.Layouts 1.15
-import QtQuick.Controls 2.15
-import org.kde.plasma.plasma5support 2.0 as PlasmaCore
-import org.kde.plasma.components 3.0 as PlasmaComponents
-
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls
 import Qt5Compat.GraphicalEffects
-import org.kde.kirigami 2.20 as Kirigami
 
+import org.kde.plasma.plasma5support as Plasma5Support
+import org.kde.plasma.components as PlasmaComponents
+import org.kde.kirigami as Kirigami
 import org.kde.breeze.components
 
 import "components"
@@ -50,7 +48,7 @@ Item {
     LayoutMirroring.enabled: Qt.application.layoutDirection === Qt.RightToLeft
     LayoutMirroring.childrenInherit: true
 
-    PlasmaCore.DataSource {
+    Plasma5Support.DataSource {
         id: keystateSource
         engine: "keystate"
         connectedSources: "Caps Lock"
@@ -127,10 +125,6 @@ Item {
             focus: true //StackView is an implicit focus scope, so we need to give this focus so the item inside will have it
 
             Timer {
-                //SDDM has a bug in 0.13 where even though we set the focus on the right item within the window, the window doesn't have focus
-                //it is fixed in 6d5b36b28907b16280ff78995fef764bb0c573db which will be 0.14
-                //we need to call "window->activate()" *After* it's been shown. We can't control that in QML so we use a shoddy timer
-                //it's been this way for all Plasma 5.x without a huge problem
                 running: true
                 repeat: false
                 interval: 200
@@ -209,7 +203,7 @@ Item {
             }
         }
 
-        // IMported from org.kde.breeze.components
+        // Imported from org.kde.breeze.components
         VirtualKeyboardLoader {
             id: inputPanel
 

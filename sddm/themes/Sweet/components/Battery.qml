@@ -17,17 +17,17 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
  
-import QtQuick 2.2
+import QtQuick
 
-import org.kde.plasma.core 2.0 as PlasmaCore
-import org.kde.plasma.components 2.0 as PlasmaComponents
-import org.kde.plasma.workspace.components 2.0 as PW
+import org.kde.plasma.plasma5support as Plasma5Support
+import org.kde.plasma.components as PlasmaComponents
+import org.kde.plasma.workspace.components as PW
 
 Row {
     spacing: units.smallSpacing
     visible: pmSource.data["Battery"]["Has Cumulative"]
 
-    PlasmaCore.DataSource {
+    Plasma5Support.DataSource {
         id: pmSource
         engine: "powermanagement"
         connectedSources: ["Battery", "AC Adapter"]
