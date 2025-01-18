@@ -50,20 +50,18 @@ do
 done
 echo -e "\033[0KExport animated cursors... DONE"
 
-# TODO: needs actual check
 echo -ne "Generating shortcuts...\\r"
 while read alias ; do
 	ln_name=${alias% *}
 	cursor_name=${alias#* }
 
     ln_path="$output_scalable/$ln_name"
-    cursor_path="$output_scalable/$cursor_name/$cursor_name.svg"
 
 	if [ -e "$ln_path" ] ; then
 		continue
 	fi
 
-	ln -s "$cursor_path" "$ln_path"
+	ln -s "$cursor_name" "$ln_path"
 done < $aliases
 echo -e "\033[0KGenerating shortcuts... DONE"
 
